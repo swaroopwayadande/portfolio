@@ -1,0 +1,84 @@
+/* Define keyframe wave animation */
+@keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply wave animation to each element with a slight delay */
+  .wave-animation1 {
+    animation: wave 2s ease-in-out infinite;
+  }
+  
+  .wave-animation2 {
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .wave-animation3 {
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+  }
+  
+  .wave-animation4 {
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+  }
+  
+  .wave-animation5 {
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+  }
+  
+
+  /* for taglines */
+
+  @keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: #fff;
+    }
+    100% {
+        border-right-color: transparent;
+    }
+}
+
+.typing-effect {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    animation: typing 4s steps(30) forwards, blink 0.75s step-end infinite;
+}
+
+.span-1 {
+    animation-delay: 0s; /* First span starts immediately */
+}
+
+.span-2 {
+    animation-delay: 4s; /* Second span starts after the first finishes */
+}
+
+.span-3 {
+    animation-delay: 8s; /* Third span starts after the second finishes */
+}
